@@ -1,0 +1,52 @@
+
+//2. soru
+
+//#include <stdio.h>
+//#include <stdlib.h>
+//
+//void alternateSort(int arr[], int n) {
+//    int* temp = (int*)malloc(n * sizeof(int));
+//    if (temp == NULL) {
+//        printf("Bellek tahsis edilemedi!");
+//        return;
+//    }
+//    int small = 0;
+//    int large = n - 1; 
+//    int flag = 1; 
+//
+//    while (small <= large) {
+//        if (flag) {
+//            temp[small++] = arr[large--];
+//        }
+//        else {
+//            temp[small++] = arr[small];
+//        }
+//        flag = !flag;
+//    }
+//    for (int i = 0; i < n; i++) {
+//        arr[i] = temp[i];
+//    }
+//
+//    free(temp);
+//}
+//int main() {
+//    int arr[] = { 60, 80, 3, 9, 57, 11 };
+//    int n = sizeof(arr) / sizeof(arr[0]);
+//
+//    printf("Dizi siralanmadan once: ");
+//    for (int i = 0; i < n; i++) {
+//        printf("%d ", arr[i]);
+//    }
+//    printf("\n");
+//
+//    alternateSort(arr, n);
+//
+//    printf("Dizi siralandıktan sonra: ");
+//    for (int i = 0; i < n; i++) {
+//        printf("%d ", arr[i]);
+//    }
+//    printf("\n");
+//
+//    return 0;
+//}
+

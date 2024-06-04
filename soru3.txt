@@ -1,0 +1,62 @@
+//soru 3
+//#include <stdio.h>
+//#include <stdlib.h>
+//#include <stdbool.h>
+//
+//#define ALPHABET_SIZE 26
+//
+//struct TrieNode {
+//    struct TrieNode* children[ALPHABET_SIZE]; 
+//    bool isEndOfWord;
+//};
+//struct TrieNode* createNode() {
+//    struct TrieNode* newNode = (struct TrieNode*)malloc(sizeof(struct TrieNode));
+//    if (newNode) {
+//        newNode->isEndOfWord = false;
+//        for (int i = 0; i < ALPHABET_SIZE; i++) {
+//            newNode->children[i] = NULL;
+//        }
+//    }
+//    return newNode;
+//}
+//void insert(struct TrieNode* root, const char* word) {
+//    struct TrieNode* temp = root;
+//    while (*word) {
+//        int index = *word - 'a';
+//        if (!temp->children[index]) {
+//            temp->children[index] = createNode(); 
+//        }
+//        temp = temp->children[index];
+//        word++;
+//    }
+//    temp->isEndOfWord = true;
+//}
+//bool search(struct TrieNode* root, const char* word) {
+//    struct TrieNode* temp = root;
+//    while (*word) {
+//        int index = *word - 'a';
+//        if (!temp->children[index]) {
+//            return false;
+//        }
+//        temp = temp->children[index];
+//        word++;
+//    }
+//    return (temp != NULL && temp->isEndOfWord);
+//}
+//
+//int main() {
+//    struct TrieNode* root = createNode();
+//
+//    insert(root, "apple");
+//    insert(root, "banana");
+//    insert(root, "cat");
+//    insert(root, "dog");
+//    insert(root, "zebra");
+//
+//    printf("Aranan kelime: %s\n", search(root, "apple") ? "Var" : "Yok");
+//    printf("Aranan kelime: %s\n", search(root, "orange") ? "Var" : "Yok");
+//
+//    return 0;
+}
+
+
